@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C965AA527EE97AE00E6CBB1 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C965AA427EE97AE00E6CBB1 /* FavoriteView.swift */; };
+		8C965AA727EE97E100E6CBB1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C965AA627EE97E100E6CBB1 /* MainView.swift */; };
+		8C965AA927EEA33600E6CBB1 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C965AA827EEA33600E6CBB1 /* FavoriteViewModel.swift */; };
+		8C965AAC27EEA81B00E6CBB1 /* FavoriteGifLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C965AAB27EEA81B00E6CBB1 /* FavoriteGifLocalDataSource.swift */; };
+		8C965AAE27EF738200E6CBB1 /* UserDefaultUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C965AAD27EF738200E6CBB1 /* UserDefaultUtils.swift */; };
+		8CAC61E827EE53C8007279A6 /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC61E727EE53C8007279A6 /* GifView.swift */; };
 		8CCB337A27EE10C600D5E0F7 /* giphyFreshApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB337927EE10C600D5E0F7 /* giphyFreshApp.swift */; };
 		8CCB337C27EE10C600D5E0F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB337B27EE10C600D5E0F7 /* ContentView.swift */; };
 		8CCB337E27EE10C700D5E0F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CCB337D27EE10C700D5E0F7 /* Assets.xcassets */; };
@@ -16,6 +22,16 @@
 		8CCB339027EE10C700D5E0F7 /* giphyFreshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB338F27EE10C700D5E0F7 /* giphyFreshTests.swift */; };
 		8CCB339A27EE10C800D5E0F7 /* giphyFreshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB339927EE10C800D5E0F7 /* giphyFreshUITests.swift */; };
 		8CCB339C27EE10C800D5E0F7 /* giphyFreshUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB339B27EE10C800D5E0F7 /* giphyFreshUITestsLaunchTests.swift */; };
+		8CCB33AB27EE1B9400D5E0F7 /* TrendingResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB33AA27EE1B9400D5E0F7 /* TrendingResponseModel.swift */; };
+		8CCB33AE27EE1C6E00D5E0F7 /* DataTrendingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB33AD27EE1C6E00D5E0F7 /* DataTrendingModel.swift */; };
+		8CCB33B027EE1C8E00D5E0F7 /* AnalyticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB33AF27EE1C8E00D5E0F7 /* AnalyticsModel.swift */; };
+		8CCB33B227EE1CE000D5E0F7 /* OnClickModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB33B127EE1CE000D5E0F7 /* OnClickModel.swift */; };
+		8CCB33B427EE1D1700D5E0F7 /* ImagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB33B327EE1D1700D5E0F7 /* ImagesModel.swift */; };
+		8CCB33B627EE1D7400D5E0F7 /* OtherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB33B527EE1D7400D5E0F7 /* OtherModels.swift */; };
+		8CCB33B827EE1DC000D5E0F7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB33B727EE1DC000D5E0F7 /* UserModel.swift */; };
+		8CCB33BA27EE1DF700D5E0F7 /* PaginationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB33B927EE1DF700D5E0F7 /* PaginationModel.swift */; };
+		8CCB33BD27EE1EEC00D5E0F7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB33BC27EE1EEC00D5E0F7 /* NetworkManager.swift */; };
+		8CCB33BF27EE3F2C00D5E0F7 /* GifMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB33BE27EE3F2C00D5E0F7 /* GifMainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C965AA427EE97AE00E6CBB1 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		8C965AA627EE97E100E6CBB1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8C965AA827EEA33600E6CBB1 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		8C965AAB27EEA81B00E6CBB1 /* FavoriteGifLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteGifLocalDataSource.swift; sourceTree = "<group>"; };
+		8C965AAD27EF738200E6CBB1 /* UserDefaultUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultUtils.swift; sourceTree = "<group>"; };
+		8CAC61E727EE53C8007279A6 /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
 		8CCB337627EE10C600D5E0F7 /* giphyFresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = giphyFresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CCB337927EE10C600D5E0F7 /* giphyFreshApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giphyFreshApp.swift; sourceTree = "<group>"; };
 		8CCB337B27EE10C600D5E0F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +70,16 @@
 		8CCB339527EE10C700D5E0F7 /* giphyFreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = giphyFreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CCB339927EE10C800D5E0F7 /* giphyFreshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giphyFreshUITests.swift; sourceTree = "<group>"; };
 		8CCB339B27EE10C800D5E0F7 /* giphyFreshUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = giphyFreshUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8CCB33AA27EE1B9400D5E0F7 /* TrendingResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingResponseModel.swift; sourceTree = "<group>"; };
+		8CCB33AD27EE1C6E00D5E0F7 /* DataTrendingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTrendingModel.swift; sourceTree = "<group>"; };
+		8CCB33AF27EE1C8E00D5E0F7 /* AnalyticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsModel.swift; sourceTree = "<group>"; };
+		8CCB33B127EE1CE000D5E0F7 /* OnClickModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnClickModel.swift; sourceTree = "<group>"; };
+		8CCB33B327EE1D1700D5E0F7 /* ImagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesModel.swift; sourceTree = "<group>"; };
+		8CCB33B527EE1D7400D5E0F7 /* OtherModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherModels.swift; sourceTree = "<group>"; };
+		8CCB33B727EE1DC000D5E0F7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8CCB33B927EE1DF700D5E0F7 /* PaginationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationModel.swift; sourceTree = "<group>"; };
+		8CCB33BC27EE1EEC00D5E0F7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8CCB33BE27EE3F2C00D5E0F7 /* GifMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifMainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C965AAA27EEA7F500E6CBB1 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8C965AAB27EEA81B00E6CBB1 /* FavoriteGifLocalDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		8CAC61E927EE638B007279A6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8CAC61E727EE53C8007279A6 /* GifView.swift */,
+				8C965AAD27EF738200E6CBB1 /* UserDefaultUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		8CCB336D27EE10C600D5E0F7 = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +147,13 @@
 		8CCB337827EE10C600D5E0F7 /* giphyFresh */ = {
 			isa = PBXGroup;
 			children = (
+				8C965AAA27EEA7F500E6CBB1 /* DataSource */,
+				8CCB33C227EE421B00D5E0F7 /* View */,
+				8CCB33BB27EE1ED100D5E0F7 /* Network */,
+				8CCB33A927EE12FC00D5E0F7 /* Model */,
+				8CAC61E927EE638B007279A6 /* Utils */,
+				8CCB33A827EE12EC00D5E0F7 /* ViewModel */,
 				8CCB337927EE10C600D5E0F7 /* giphyFreshApp.swift */,
-				8CCB337B27EE10C600D5E0F7 /* ContentView.swift */,
 				8CCB337D27EE10C700D5E0F7 /* Assets.xcassets */,
 				8CCB338227EE10C700D5E0F7 /* Persistence.swift */,
 				8CCB338427EE10C700D5E0F7 /* giphyFresh.xcdatamodeld */,
@@ -131,6 +185,56 @@
 				8CCB339B27EE10C800D5E0F7 /* giphyFreshUITestsLaunchTests.swift */,
 			);
 			path = giphyFreshUITests;
+			sourceTree = "<group>";
+		};
+		8CCB33A827EE12EC00D5E0F7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8CCB33BE27EE3F2C00D5E0F7 /* GifMainViewModel.swift */,
+				8C965AA827EEA33600E6CBB1 /* FavoriteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8CCB33A927EE12FC00D5E0F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CCB33AC27EE1C2100D5E0F7 /* TrendingResponse */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CCB33AC27EE1C2100D5E0F7 /* TrendingResponse */ = {
+			isa = PBXGroup;
+			children = (
+				8CCB33AF27EE1C8E00D5E0F7 /* AnalyticsModel.swift */,
+				8CCB33AD27EE1C6E00D5E0F7 /* DataTrendingModel.swift */,
+				8CCB33B327EE1D1700D5E0F7 /* ImagesModel.swift */,
+				8CCB33B127EE1CE000D5E0F7 /* OnClickModel.swift */,
+				8CCB33B527EE1D7400D5E0F7 /* OtherModels.swift */,
+				8CCB33B927EE1DF700D5E0F7 /* PaginationModel.swift */,
+				8CCB33AA27EE1B9400D5E0F7 /* TrendingResponseModel.swift */,
+				8CCB33B727EE1DC000D5E0F7 /* UserModel.swift */,
+			);
+			path = TrendingResponse;
+			sourceTree = "<group>";
+		};
+		8CCB33BB27EE1ED100D5E0F7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8CCB33BC27EE1EEC00D5E0F7 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8CCB33C227EE421B00D5E0F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8CCB337B27EE10C600D5E0F7 /* ContentView.swift */,
+				8C965AA427EE97AE00E6CBB1 /* FavoriteView.swift */,
+				8C965AA627EE97E100E6CBB1 /* MainView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +367,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C965AA927EEA33600E6CBB1 /* FavoriteViewModel.swift in Sources */,
+				8CCB33B627EE1D7400D5E0F7 /* OtherModels.swift in Sources */,
+				8C965AAE27EF738200E6CBB1 /* UserDefaultUtils.swift in Sources */,
 				8CCB338627EE10C700D5E0F7 /* giphyFresh.xcdatamodeld in Sources */,
+				8CAC61E827EE53C8007279A6 /* GifView.swift in Sources */,
+				8CCB33B227EE1CE000D5E0F7 /* OnClickModel.swift in Sources */,
+				8CCB33B027EE1C8E00D5E0F7 /* AnalyticsModel.swift in Sources */,
 				8CCB338327EE10C700D5E0F7 /* Persistence.swift in Sources */,
+				8CCB33AE27EE1C6E00D5E0F7 /* DataTrendingModel.swift in Sources */,
+				8CCB33B427EE1D1700D5E0F7 /* ImagesModel.swift in Sources */,
+				8C965AA527EE97AE00E6CBB1 /* FavoriteView.swift in Sources */,
+				8CCB33BA27EE1DF700D5E0F7 /* PaginationModel.swift in Sources */,
 				8CCB337C27EE10C600D5E0F7 /* ContentView.swift in Sources */,
+				8C965AA727EE97E100E6CBB1 /* MainView.swift in Sources */,
+				8C965AAC27EEA81B00E6CBB1 /* FavoriteGifLocalDataSource.swift in Sources */,
+				8CCB33AB27EE1B9400D5E0F7 /* TrendingResponseModel.swift in Sources */,
 				8CCB337A27EE10C600D5E0F7 /* giphyFreshApp.swift in Sources */,
+				8CCB33B827EE1DC000D5E0F7 /* UserModel.swift in Sources */,
+				8CCB33BD27EE1EEC00D5E0F7 /* NetworkManager.swift in Sources */,
+				8CCB33BF27EE3F2C00D5E0F7 /* GifMainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
