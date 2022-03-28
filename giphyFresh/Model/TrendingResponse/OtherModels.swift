@@ -9,14 +9,14 @@ import Foundation
 
 // MARK: - The480_WStill
 struct The480_WStill: Codable {
-    let height, width, size: String
-    let url: String
+    let height, width, size: String?
+    let url: String?
 }
 
 // MARK: - The4_K
 struct The4_K: Codable {
-    let height, width, mp4Size: String
-    let mp4: String
+    let height, width, mp4Size: String?
+    let mp4: String?
 
     enum CodingKeys: String, CodingKey {
         case height, width
@@ -27,12 +27,12 @@ struct The4_K: Codable {
 
 // MARK: - FixedHeight
 struct FixedHeight: Codable {
-    let height, width, size: String
-    let url: String
+    let height, width, size: String?
+    let url: String?
     let mp4Size: String?
     let mp4: String?
-    let webpSize: String
-    let webp: String
+    let webpSize: String?
+    let webp: String?
     let frames, hash: String?
 
     enum CodingKeys: String, CodingKey {
@@ -46,8 +46,8 @@ struct FixedHeight: Codable {
 
 // MARK: - Looping
 struct Looping: Codable {
-    let mp4Size: String
-    let mp4: String
+    let mp4Size: String?
+    let mp4: String?
 
     enum CodingKeys: String, CodingKey {
         case mp4Size = "mp4_size"
@@ -57,8 +57,8 @@ struct Looping: Codable {
 
 // MARK: - Meta
 struct Meta: Codable {
-    let status: Int
-    let msg, responseID: String
+    let status: Int?
+    let msg, responseID: String?
 
     enum CodingKeys: String, CodingKey {
         case status, msg

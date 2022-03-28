@@ -6,28 +6,29 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 // MARK: - DataTrendingModel
 struct DataTrendingModel: Codable, Identifiable {
-    let type: TypeEnum
+    let type: String?
     let id: String
-    let url: String
-    let slug: String
-    let bitlyGIFURL, bitlyURL: String
-    let embedURL: String
-    let username: String
-    let source: String
-    let title: String
-    let rating: Rating
-    let contentURL, sourceTLD: String
-    let sourcePostURL: String
-    let isSticker: Int
-    let importDatetime, trendingDatetime: String
-    let images: ImagesModel
+    let url: String?
+    let slug: String?
+    let bitlyGIFURL, bitlyURL: String?
+    let embedURL: String?
+    let username: String?
+    let source: String?
+    let title: String?
+    let rating: Rating?
+    let contentURL, sourceTLD: String?
+    let sourcePostURL: String?
+    let isSticker: Int?
+    let importDatetime, trendingDatetime: String?
+    let images: ImagesModel?
     let user: UserModel?
-    let analyticsResponsePayload: String
-    let analytics: AnalyticsModel
+    let analyticsResponsePayload: String?
+    let analytics: AnalyticsModel?
 
     enum CodingKeys: String, CodingKey {
         case type, id, url, slug

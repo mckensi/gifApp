@@ -1,8 +1,8 @@
 //
-//  GifView.swift
+//  GifUtils.swift
 //  giphyFresh
 //
-//  Created by Daniel Murcia Almanza on 25/03/22.
+//  Created by Daniel Steven Murcia Almanza on 27/03/22.
 //
 
 import Foundation
@@ -169,33 +169,4 @@ struct GIFImage: UIViewRepresentable {
       uiView.updateGIF(name: name ?? "")
     }
   }
-}
-
-struct GIFImageTest: View {
-    @State private var imageData: Data? = nil
-    
-    var url: URL
-    
-    init(url: URL) {
-      self.url = url
-    }
-    
-    var body: some View {
-        VStack {
-            if let data = imageData {
-                GIFImage(data: data)
-                    .frame(width: 100, height: 100)
-            } else {
-                Text("Loading...")
-                    .onAppear(perform: loadData)
-            }
-        }
-    }
-    
-    private func loadData() {
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            imageData = data
-        }
-        task.resume()
-    }
 }

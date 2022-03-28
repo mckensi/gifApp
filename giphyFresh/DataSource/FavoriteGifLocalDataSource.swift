@@ -20,6 +20,17 @@ class FavoriteGifLocalDataSource {
         }
     }
     
+    func removeFavoriteGif(gif: DataTrendingModel) {
+        var favorites : [DataTrendingModel] = getFavoriteGifs()
+        favorites.removeAll { $0.id == gif.id}
+        do {
+            try defaults.setObject(favorites, forKey: "favorite")
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+
+    
     func isFavorite(gif: DataTrendingModel) -> Bool {
         let favorites = getFavoriteGifs()
         return favorites.contains { $0.id == gif.id}

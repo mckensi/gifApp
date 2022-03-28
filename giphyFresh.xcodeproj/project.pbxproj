@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E9D2C9B27F164CF008C96D2 /* GifUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D2C9A27F164CF008C96D2 /* GifUtils.swift */; };
+		2E9D2C9D27F16610008C96D2 /* GifViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D2C9C27F16610008C96D2 /* GifViewModel.swift */; };
 		8C965AA527EE97AE00E6CBB1 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C965AA427EE97AE00E6CBB1 /* FavoriteView.swift */; };
 		8C965AA727EE97E100E6CBB1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C965AA627EE97E100E6CBB1 /* MainView.swift */; };
 		8C965AA927EEA33600E6CBB1 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C965AA827EEA33600E6CBB1 /* FavoriteViewModel.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E9D2C9A27F164CF008C96D2 /* GifUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifUtils.swift; sourceTree = "<group>"; };
+		2E9D2C9C27F16610008C96D2 /* GifViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewModel.swift; sourceTree = "<group>"; };
 		8C965AA427EE97AE00E6CBB1 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		8C965AA627EE97E100E6CBB1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8C965AA827EEA33600E6CBB1 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
@@ -118,8 +122,8 @@
 		8CAC61E927EE638B007279A6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				8CAC61E727EE53C8007279A6 /* GifView.swift */,
 				8C965AAD27EF738200E6CBB1 /* UserDefaultUtils.swift */,
+				2E9D2C9A27F164CF008C96D2 /* GifUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -192,6 +196,7 @@
 			children = (
 				8CCB33BE27EE3F2C00D5E0F7 /* GifMainViewModel.swift */,
 				8C965AA827EEA33600E6CBB1 /* FavoriteViewModel.swift */,
+				2E9D2C9C27F16610008C96D2 /* GifViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 			children = (
 				8CCB337B27EE10C600D5E0F7 /* ContentView.swift */,
 				8C965AA427EE97AE00E6CBB1 /* FavoriteView.swift */,
+				8CAC61E727EE53C8007279A6 /* GifView.swift */,
 				8C965AA627EE97E100E6CBB1 /* MainView.swift */,
 			);
 			path = View;
@@ -368,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C965AA927EEA33600E6CBB1 /* FavoriteViewModel.swift in Sources */,
+				2E9D2C9D27F16610008C96D2 /* GifViewModel.swift in Sources */,
 				8CCB33B627EE1D7400D5E0F7 /* OtherModels.swift in Sources */,
 				8C965AAE27EF738200E6CBB1 /* UserDefaultUtils.swift in Sources */,
 				8CCB338627EE10C700D5E0F7 /* giphyFresh.xcdatamodeld in Sources */,
@@ -377,6 +384,7 @@
 				8CCB338327EE10C700D5E0F7 /* Persistence.swift in Sources */,
 				8CCB33AE27EE1C6E00D5E0F7 /* DataTrendingModel.swift in Sources */,
 				8CCB33B427EE1D1700D5E0F7 /* ImagesModel.swift in Sources */,
+				2E9D2C9B27F164CF008C96D2 /* GifUtils.swift in Sources */,
 				8C965AA527EE97AE00E6CBB1 /* FavoriteView.swift in Sources */,
 				8CCB33BA27EE1DF700D5E0F7 /* PaginationModel.swift in Sources */,
 				8CCB337C27EE10C600D5E0F7 /* ContentView.swift in Sources */,
@@ -473,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -527,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

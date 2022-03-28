@@ -9,5 +9,5 @@ import Foundation
 
 // MARK: - Analytics
 struct AnalyticsModel: Codable {
-    let onload, onclick, onsent: OnclickModel
+    let onload, onclick, onsent: OnclickModel?
 }

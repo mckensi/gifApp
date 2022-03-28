@@ -18,16 +18,11 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(viewModel.gifs) { gif in
+    
                     ZStack {
-                        GIFImageTest(url: URL(string: gif.images.fixedHeight.url)!)
-                        HStack {
-                            Spacer()
-                            Image(systemName: favoriteLocalDataSource.isFavorite(gif: gif) ? "heart.fill" : "heart")
-                                .onTapGesture {
-                                    favoriteLocalDataSource.addNewFavoriteGif(gif: gif)
-                                }
-                        }
-                        
+                        GIFImageTest(
+                            viewModel: GifViewModel(gif: gif)
+                        )
                     }
                 }
             }

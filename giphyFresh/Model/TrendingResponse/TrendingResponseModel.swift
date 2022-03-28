@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Welcome
 struct TrendingResponseModel: Codable {
-    let data: [DataTrendingModel]
-    let pagination: PaginationModel
-    let meta: Meta
+    let data: [DataTrendingModel]?
+    let pagination: PaginationModel?
+    let meta: Meta?
 }

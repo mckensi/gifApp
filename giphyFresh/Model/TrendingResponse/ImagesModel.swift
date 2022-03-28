@@ -9,18 +9,18 @@ import Foundation
 
 // MARK: - Images
 struct ImagesModel: Codable {
-    let original: FixedHeight
-    let downsized, downsizedLarge, downsizedMedium: The480_WStill
-    let downsizedSmall: The4_K
-    let downsizedStill: The480_WStill
-    let fixedHeight, fixedHeightDownsampled, fixedHeightSmall: FixedHeight
-    let fixedHeightSmallStill, fixedHeightStill: The480_WStill
-    let fixedWidth, fixedWidthDownsampled, fixedWidthSmall: FixedHeight
-    let fixedWidthSmallStill, fixedWidthStill: The480_WStill
-    let looping: Looping
-    let originalStill: The480_WStill
-    let originalMp4, preview: The4_K
-    let previewGIF, previewWebp, the480WStill: The480_WStill
+    let original: FixedHeight?
+    let downsized, downsizedLarge, downsizedMedium: The480_WStill?
+    let downsizedSmall: The4_K?
+    let downsizedStill: The480_WStill?
+    let fixedHeight, fixedHeightDownsampled, fixedHeightSmall: FixedHeight?
+    let fixedHeightSmallStill, fixedHeightStill: The480_WStill?
+    let fixedWidth, fixedWidthDownsampled, fixedWidthSmall: FixedHeight?
+    let fixedWidthSmallStill, fixedWidthStill: The480_WStill?
+    let looping: Looping?
+    let originalStill: The480_WStill?
+    let originalMp4, preview: The4_K?
+    let previewGIF, previewWebp, the480WStill: The480_WStill?
     let hd, the4K: The4_K?
 
     enum CodingKeys: String, CodingKey {

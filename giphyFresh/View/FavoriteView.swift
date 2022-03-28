@@ -12,6 +12,7 @@ struct FavoriteView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var viewModel = FavoriteViewModel()
     @State var isOnGridView = false
+    var favoriteLocalDataSource = FavoriteGifLocalDataSource()
     
     private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
@@ -20,7 +21,9 @@ struct FavoriteView: View {
             if(!isOnGridView) {
                 List {
                     ForEach(viewModel.favoriteGif) { gif in
-                        GIFImageTest(url: URL(string: gif.images.fixedHeight.url)!)
+                        GIFImageTest(
+                            viewModel: GifViewModel(gif: gif)
+                        )
                     }
                 }
                 .navigationBarTitle("Favorites")
@@ -38,7 +41,7 @@ struct FavoriteView: View {
                 ScrollView {
                     LazyVGrid(columns: threeColumnGrid) {
                         ForEach(viewModel.favoriteGif) { gif in
-                            GIFImageTest(url: URL(string: gif.images.fixedHeight.url)!)
+                            GIFImageTest(viewModel: GifViewModel(gif: gif))
                         }
                     }
                     .navigationBarTitle("Favorites")

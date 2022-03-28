@@ -15,9 +15,6 @@ final class GifMainViewModel : ObservableObject {
     
     var subscribers = Set<AnyCancellable>()
 
-    
-
-
     func getGifPublisher() {
         var urlGifTrending = URLComponents(string: "https://api.giphy.com/v1/gifs/trending")!
         urlGifTrending.queryItems = [
@@ -63,7 +60,7 @@ final class GifMainViewModel : ObservableObject {
                 }
             } receiveValue: { response in
                 DispatchQueue.main.async {
-                    self.gifs = response.data
+                    self.gifs = response.data ?? []
                 }
             }
             .store(in: &self.subscribers)
@@ -117,7 +114,7 @@ final class GifMainViewModel : ObservableObject {
                 }
             } receiveValue: { response in
                 DispatchQueue.main.async {
-                    self.gifs = response.data
+                    self.gifs = response.data ?? []
                 }
             }
             .store(in: &self.subscribers)

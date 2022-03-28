@@ -9,5 +9,5 @@ import Foundation
 
 // MARK: - Onclick
 struct OnclickModel: Codable {
-    let url: String
+    let url: String?
 }
