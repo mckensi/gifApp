@@ -15,7 +15,11 @@ final class GifMainViewModel : ObservableObject {
     
     var subscribers = Set<AnyCancellable>()
     
-    @ObservedObject var networkManager = NetworkManager()
+    var networkManager : DataProvider
+    
+    init(networkManager: DataProvider = NetworkManager()) {
+        self.networkManager = networkManager
+    }
     
     /// Get gifs from API Giphy using networkManager
     func getGifUsingNetworkManager() {
