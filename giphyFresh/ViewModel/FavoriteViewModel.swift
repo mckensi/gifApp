@@ -15,11 +15,9 @@ final class FavoriteViewModel : ObservableObject {
     
     let favoriteGifDataSource = FavoriteGifLocalDataSource()
     
-    func saveNewFavorite(gif: DataTrendingModel) {
-        favoriteGif.append(gif)
-    }
-    
+    /// Get favorite gifs from  localdatasource
     func getFavoriteGifs() {
         favoriteGif = favoriteGifDataSource.getFavoriteGifs()
     }
+    
 }

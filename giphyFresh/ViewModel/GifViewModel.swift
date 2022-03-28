@@ -16,23 +16,21 @@ final class GifViewModel : ObservableObject {
         self.gif = gif
         self.isFavorite = favoriteLocalDataSource.isFavorite(gif: gif)
     }
-     
-
     
+    /// Add favorite gif into local datasource
+    private func addFavorite() {
+        favoriteLocalDataSource.addNewFavoriteGif(gif: self.gif)
+    }
+    
+    /// Remove favorite gif into local datasource
+    private func removeFavorite() {
+        favoriteLocalDataSource.removeFavoriteGif(gif: self.gif)
+    }
+    
+    /// Select  heart  action to change the view and remove or add favorite into local datasource
     func selectHeartAction() {
         self.isFavorite.toggle()
         isFavorite ? addFavorite() : removeFavorite()
     }
     
-    private func addFavorite() {
-        favoriteLocalDataSource.addNewFavoriteGif(gif: self.gif)
-    }
-    
-    private func removeFavorite() {
-        favoriteLocalDataSource.removeFavoriteGif(gif: self.gif)
-    }
-    
-    func updateFavorite() {
-        isFavorite = favoriteLocalDataSource.isFavorite(gif: self.gif)
-    }
 }

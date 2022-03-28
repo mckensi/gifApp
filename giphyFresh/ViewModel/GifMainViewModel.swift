@@ -14,7 +14,8 @@ final class GifMainViewModel : ObservableObject {
     @Published var gifs: [DataTrendingModel] = []
     
     var subscribers = Set<AnyCancellable>()
-
+    
+    /// Get gifs from API Giphy
     func getGifPublisher() {
         var urlGifTrending = URLComponents(string: "https://api.giphy.com/v1/gifs/trending")!
         urlGifTrending.queryItems = [
@@ -66,7 +67,7 @@ final class GifMainViewModel : ObservableObject {
             .store(in: &self.subscribers)
     }
     
-    
+    /// Search gifs from API Giphy
     func searchGifs(search: String) {
         var urlGifTrending = URLComponents(string: "https://api.giphy.com/v1/gifs/search")!
         urlGifTrending.queryItems = [
