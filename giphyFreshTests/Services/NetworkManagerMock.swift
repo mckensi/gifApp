@@ -41,7 +41,7 @@ struct NetworkManagerMock : DataProvider {
     
     func searchGifs(search: String) -> AnyPublisher<Data, Error> {
         var data: Data?
-        let trendingRes = TrendingResponseModel(data: [], pagination: nil, meta: nil)
+        let trendingRes = TrendingResponseModel(data: dataTrending, pagination: nil, meta: nil)
         let encoder = JSONEncoder()
         do {
             data = try encoder.encode(trendingRes)
