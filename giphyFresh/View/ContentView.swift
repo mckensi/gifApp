@@ -28,15 +28,15 @@ struct ContentView: View {
             }
             .navigationTitle("GIFS")
             .onAppear {
-                viewModel.getGifPublisher()
+                viewModel.getGifUsingNetworkManager()
             }
         }
         .searchable(text: $searchText)
         .onChange(of: searchText) { newValue in
             if(newValue.isEmpty) {
-                viewModel.getGifPublisher()
+                viewModel.getGifUsingNetworkManager()
             } else {
-                viewModel.searchGifs(search: newValue)
+                viewModel.searchGifsNetworkManager(search: newValue)
             }
      
         }

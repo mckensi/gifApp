@@ -23,7 +23,8 @@ struct GIFImageTest: View {
                         .frame(width: 100, height: 100)
                     HStack {
                         Spacer()
-                        Image(systemName: viewModel.isFavorite ? "heart.fill" : "heart")
+                        Image(systemName: "heart.fill")
+                            .foregroundColor(viewModel.isFavorite ? .red : .gray)
                             .onTapGesture {
                                 viewModel.selectHeartAction()
                             }

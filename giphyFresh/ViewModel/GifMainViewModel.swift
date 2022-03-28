@@ -15,35 +15,11 @@ final class GifMainViewModel : ObservableObject {
     
     var subscribers = Set<AnyCancellable>()
     
-    /// Get gifs from API Giphy
-    func getGifPublisher() {
-        var urlGifTrending = URLComponents(string: "https://api.giphy.com/v1/gifs/trending")!
-        urlGifTrending.queryItems = [
-            URLQueryItem(name: "api_key", value: "dVO4smhMOrhvgKDC5JaPSFfYseBfANaX"),
-            URLQueryItem(name: "limit", value: "10")
-        ]
-        let request = URLRequest(url: urlGifTrending.url!)
-        
-        URLSession.shared.dataTaskPublisher(for: request)
-            .mapError { error -> NetworkErrors in
-                if error.errorCode == -1001 {
-                    return .timeout(error.localizedDescription)
-                } else {
-                    return .general(error.localizedDescription)
-                }
-                
-            }
-            .retry(3)
-            .tryMap { (data, response) -> Data in
-                guard let response = response as? HTTPURLResponse else {
-                    throw NetworkErrors.badConnection("Error on Network conection")
-                }
-                if response.statusCode == 200 {
-                    return data
-                } else {
-                    throw NetworkErrors.notFound("Status code \(response.statusCode)")
-                }
-            }
+    @ObservedObject var networkManager = NetworkManager()
+    
+    /// Get gifs from API Giphy using networkManager
+    func getGifUsingNetworkManager() {
+        networkManager.getGifPublisher()
             .decode(type: TrendingResponseModel.self, decoder: JSONDecoder())
             .sink { completion in
                 if case .failure(let error) = completion,
@@ -67,37 +43,9 @@ final class GifMainViewModel : ObservableObject {
             .store(in: &self.subscribers)
     }
     
-    /// Search gifs from API Giphy
-    func searchGifs(search: String) {
-        var urlGifTrending = URLComponents(string: "https://api.giphy.com/v1/gifs/search")!
-        urlGifTrending.queryItems = [
-            URLQueryItem(name: "api_key", value: "dVO4smhMOrhvgKDC5JaPSFfYseBfANaX"),
-            URLQueryItem(name: "limit", value: "10"),
-            URLQueryItem(name: "q", value: search)
-        ]
-        
-        let request = URLRequest(url: urlGifTrending.url!)
-        
-        URLSession.shared.dataTaskPublisher(for: request)
-            .mapError { error -> NetworkErrors in
-                if error.errorCode == -1001 {
-                    return .timeout(error.localizedDescription)
-                } else {
-                    return .general(error.localizedDescription)
-                }
-                
-            }
-            .retry(3)
-            .tryMap { (data, response) -> Data in
-                guard let response = response as? HTTPURLResponse else {
-                    throw NetworkErrors.badConnection("Error on Network conection")
-                }
-                if response.statusCode == 200 {
-                    return data
-                } else {
-                    throw NetworkErrors.notFound("Status code \(response.statusCode)")
-                }
-            }
+    /// Search gifs from API Giphy using networkManager
+    func searchGifsNetworkManager(search: String) {
+        networkManager.searchGifs(search: search)
             .decode(type: TrendingResponseModel.self, decoder: JSONDecoder())
             .sink { completion in
                 if case .failure(let error) = completion,
