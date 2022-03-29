@@ -58,7 +58,7 @@
 /* Begin PBXFileReference section */
 		2E9D2C9A27F164CF008C96D2 /* GifUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifUtils.swift; sourceTree = "<group>"; };
 		2E9D2C9C27F16610008C96D2 /* GifViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewModel.swift; sourceTree = "<group>"; };
-		2E9D2CA327F225F1008C96D2 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataProvider.swift; path = giphyFresh/ViewModel/DataProvider.swift; sourceTree = SOURCE_ROOT; };
+		2E9D2CA327F225F1008C96D2 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataProvider.swift; path = giphyFresh/Network/DataProvider.swift; sourceTree = SOURCE_ROOT; };
 		2E9D2CA627F227A4008C96D2 /* NetworkManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMock.swift; sourceTree = "<group>"; };
 		2E9D2CA827F3A44A008C96D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = giphyFreshTests/Services/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
 		8C965AA427EE97AE00E6CBB1 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
@@ -115,15 +115,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E9D2CA227F225DB008C96D2 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				2E9D2CA327F225F1008C96D2 /* DataProvider.swift */,
-				2E9D2CA827F3A44A008C96D2 /* NetworkManager.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		2E9D2CA527F2278D008C96D2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,7 +240,8 @@
 		8CCB33BB27EE1ED100D5E0F7 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				2E9D2CA227F225DB008C96D2 /* Services */,
+				2E9D2CA327F225F1008C96D2 /* DataProvider.swift */,
+				2E9D2CA827F3A44A008C96D2 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
