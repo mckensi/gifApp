@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		2E9D2C9B27F164CF008C96D2 /* GifUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D2C9A27F164CF008C96D2 /* GifUtils.swift */; };
 		2E9D2C9D27F16610008C96D2 /* GifViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D2C9C27F16610008C96D2 /* GifViewModel.swift */; };
-		2E9D2CA027F170A9008C96D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D2C9E27F170A9008C96D2 /* NetworkManager.swift */; };
 		2E9D2CA427F225F1008C96D2 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D2CA327F225F1008C96D2 /* DataProvider.swift */; };
 		2E9D2CA727F227A4008C96D2 /* NetworkManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D2CA627F227A4008C96D2 /* NetworkManagerMock.swift */; };
+		2E9D2CA927F3A44A008C96D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D2CA827F3A44A008C96D2 /* NetworkManager.swift */; };
 		8C965AA527EE97AE00E6CBB1 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C965AA427EE97AE00E6CBB1 /* FavoriteView.swift */; };
 		8C965AA727EE97E100E6CBB1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C965AA627EE97E100E6CBB1 /* MainView.swift */; };
 		8C965AA927EEA33600E6CBB1 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C965AA827EEA33600E6CBB1 /* FavoriteViewModel.swift */; };
@@ -58,9 +58,9 @@
 /* Begin PBXFileReference section */
 		2E9D2C9A27F164CF008C96D2 /* GifUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifUtils.swift; sourceTree = "<group>"; };
 		2E9D2C9C27F16610008C96D2 /* GifViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewModel.swift; sourceTree = "<group>"; };
-		2E9D2C9E27F170A9008C96D2 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = ../../../../../.Trash/NetworkManager.swift; sourceTree = "<group>"; };
 		2E9D2CA327F225F1008C96D2 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataProvider.swift; path = giphyFresh/ViewModel/DataProvider.swift; sourceTree = SOURCE_ROOT; };
 		2E9D2CA627F227A4008C96D2 /* NetworkManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMock.swift; sourceTree = "<group>"; };
+		2E9D2CA827F3A44A008C96D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = giphyFreshTests/Services/NetworkManager.swift; sourceTree = SOURCE_ROOT; };
 		8C965AA427EE97AE00E6CBB1 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		8C965AA627EE97E100E6CBB1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8C965AA827EEA33600E6CBB1 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
@@ -119,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				2E9D2CA327F225F1008C96D2 /* DataProvider.swift */,
+				2E9D2CA827F3A44A008C96D2 /* NetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -249,7 +250,6 @@
 			isa = PBXGroup;
 			children = (
 				2E9D2CA227F225DB008C96D2 /* Services */,
-				2E9D2C9E27F170A9008C96D2 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -395,7 +395,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E9D2CA027F170A9008C96D2 /* NetworkManager.swift in Sources */,
 				8C965AA927EEA33600E6CBB1 /* FavoriteViewModel.swift in Sources */,
 				2E9D2C9D27F16610008C96D2 /* GifViewModel.swift in Sources */,
 				8CCB33B627EE1D7400D5E0F7 /* OtherModels.swift in Sources */,
@@ -407,6 +406,7 @@
 				2E9D2CA427F225F1008C96D2 /* DataProvider.swift in Sources */,
 				8CCB338327EE10C700D5E0F7 /* Persistence.swift in Sources */,
 				8CCB33AE27EE1C6E00D5E0F7 /* DataTrendingModel.swift in Sources */,
+				2E9D2CA927F3A44A008C96D2 /* NetworkManager.swift in Sources */,
 				8CCB33B427EE1D1700D5E0F7 /* ImagesModel.swift in Sources */,
 				2E9D2C9B27F164CF008C96D2 /* GifUtils.swift in Sources */,
 				8C965AA527EE97AE00E6CBB1 /* FavoriteView.swift in Sources */,
